@@ -1,7 +1,17 @@
 # docker_mm_wiki
 
+Precondition
+--
+
+You have docker installed and you have docker-compose installed.
+
+install docker on CentoS, click [here](https://docs.docker.com/install/linux/docker-ce/centos/)
+
+if you have yet have docker-compose installed , find manual [here](https://docs.docker.com/compose/install/) 
+
 Usage:
 --
+
 
 - Download the latest version of (MM_wiki)[mm-wiki-linux-amd64.tar.gz](https://github.com/phachon/mm-wiki/releases/download/v0.1.1/mm-wiki-linux-amd64.tar.gz) from [here](https://github.com/phachon/mm-wiki/releases) we will need this file when we make the docker image.
 
@@ -11,9 +21,9 @@ wget https://github.com/phachon/mm-wiki/releases/download/v0.1.7/mm-wiki-v0.1.7-
 
 - Run the ``` build.sh ``` script to create the docker image.
 
-- Run the ``` start.sh ``` script to run the docker-compose file.  if you have yet have docker-compose installed , find manual [here](https://docs.docker.com/compose/install/) 
+- Run the ``` start.sh ``` script to run the docker-compose file.  
 
-- Init the mm_wiki system by click http://ipaddress:8090/
+- To install the mm_wiki in docker ,  click http://ipaddress:8090/
   
 - Accet the MIT License to continue.
 ![s1](image/s1.jpg)
@@ -28,7 +38,7 @@ Note: It seems that the password does Not accept characters like ( _ $ ^ ) maybe
 - It's done. enjoy.
 ![s5](image/s5.jpg)
 - execute the ``` stop.sh ``` to shut down the container, then ``` start.sh ```
-  this time,  the link  http://ipaddress:8090/  is disabled, and you can access the webset at http://ipaddress:8080/ 
+- Then, the link  http://ipaddress:8090/  is disabled, the wiki is ready for use at  http://ipaddress:8080/ 
 ![s6](image/s6.jpg)
 
 Uninstall
