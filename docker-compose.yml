@@ -23,7 +23,6 @@ services:
     volumes:
       - ./mm_wiki:/mm_wiki
       - ./doc:/md
-      - ./mm-wiki.conf:/conf/mm-wiki.conf
     ports:
       - "8080:8080"
       - "8090:8090"

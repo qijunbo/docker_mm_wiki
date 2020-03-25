@@ -1,5 +1,5 @@
 #!/bin/sh
-version=$1
+version=1.7
 if [ -z "${version}" ]; then
    echo "[error:] version is not specified."
    echo "[usage:] $0 <version>"    	
